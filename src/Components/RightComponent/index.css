@@ -1,0 +1,36 @@
+.right-component{
+    width:52%;
+    background-color: #F7F7FF;
+   
+    height: 68rem;
+    border-radius: 3rem;
+    padding: 2rem 2.5rem
+    /* margin-left: 7rem; */
+}
+.heading{
+    color:#2E344A;
+}
+.form-box{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  
+}
+.form-input{
+    
+   width:19rem;
+   margin-right: .5rem;
+    padding-top:1.2rem ;
+    padding-left: 1rem;
+    padding-bottom: 1.2rem;
+    padding-right: 2rem;
+    border-radius: 2rem;
+}
+.botton-main-box{
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    
+}

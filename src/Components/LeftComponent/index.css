@@ -1,0 +1,50 @@
+.left-main-box{
+   /* background-color: red; */
+    height: 30rem;
+    width: 45%;
+    margin-top: 5.5rem;
+    padding: 2rem ;
+    margin-right: 2rem;
+}
+.left-heading{
+    font-size: 3rem;
+    line-height: 1;
+    color: #fff;
+}
+input{
+    padding: 1.3rem;
+    background-color: #7C7F8D;
+    border: none;
+    border-radius: 1rem;
+}
+.left-button-box{
+    display: flex;
+    /* justify-content: space-around; */
+    /* background-color: red; */
+}
+
+@media screen and (max-width:600px) {
+    .left-main-box{
+        /* background-color: red; */
+        
+        height: fit-content;
+        width: 100%;
+        margin-top: 5rem;
+        padding: 2rem  4rem 10rem 4rem;
+        margin-right: 0rem;
+    }
+   
+    .left-button-box{
+      margin-top: 0rem;
+        flex-direction:column ;
+      
+    }
+    .left-heading{
+        font-size: 3rem;
+        line-height: 1.5;
+        color:#fff;
+    }
+   
+    
+   
+}

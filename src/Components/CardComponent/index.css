@@ -1,0 +1,66 @@
+.main-cardComponent{
+  margin-top: 4rem;
+}
+
+.card-box{
+     background-color: #fff;
+     padding: 2rem;
+     height: 12rem;
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     box-shadow: 2px 2px 50px darkgrey;
+     border-radius: 1rem;
+     margin-bottom: 2rem;
+}
+.image-box{
+    width:20%;
+   
+    margin-right: 2rem;
+}
+.icon{
+    display: inline;
+    font-size: 1.5rem;
+}
+.user-image{
+    border: 7px solid #3BD8D4;
+    border-radius: 50%;
+}
+.content-box{
+    width:80%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+.upper-box{
+    
+    display: flex;
+    flex-direction: column;
+}
+.lower-box{
+    display: flex;
+    align-items: center;
+    width:100%;
+    justify-content: space-between;
+    color:lightgray;
+    font-size: 1.1rem;
+   
+    
+}
+.cardname{
+    font-size: 1.875rem; 
+    line-height: 2.25rem
+}
+
+
+.arrow-btn{
+    background-color: #37CAC6;
+    color:#fff;
+    font-size: 2.5rem;
+    padding:.8rem 1.2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    box-shadow: 0 0 30px darkgrey;
+}
