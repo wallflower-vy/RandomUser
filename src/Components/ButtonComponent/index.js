@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "./index.css";
-import { FaUsers, FaMale, FaFemale } from "react-icons/fa";
-import MaleUsersComponnet from "../MaleUsersComponent";
+
+
 
 const ButtonComponent = ({ bg, icon, text, handleBtnClick }) => {
  

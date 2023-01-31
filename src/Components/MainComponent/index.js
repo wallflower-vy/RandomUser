@@ -1,7 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import CardComponent from "../CardComponent";
-import DownloadButton from "../DownloadButton";
 import LeftComponent from "../LeftComponent";
 import ProfileComponent from "../ProfileComponent";
 import RightComponent from "../RightComponent";
@@ -17,10 +16,7 @@ const MainComponent = () => {
     maleUser: false,
     femaleUser: false,
     profile: false,
-   
   });
-
- 
 
   const handleNext = () => {
     setpage(page + 1);
@@ -29,7 +25,6 @@ const MainComponent = () => {
     setpage(page - 1);
   };
 
-  
   const fetchUsers = async () => {
     setActive({
       allUser: true,
@@ -45,7 +40,6 @@ const MainComponent = () => {
   };
   useEffect(() => {
     fetchUsers();
-    // fetch()
   }, [page]);
 
   const GetActiveSreen = ({ getProfileDetails }) => {
@@ -58,15 +52,30 @@ const MainComponent = () => {
       );
     }
     if (active.maleUser) {
-      return <CardComponent details={details}   getProfileDetails={getProfileDetails}/>;
+      return (
+        <CardComponent
+          details={details}
+          getProfileDetails={getProfileDetails}
+        />
+      );
     }
     if (active.femaleUser) {
-      return <CardComponent details={details}   getProfileDetails={getProfileDetails}/>;
+      return (
+        <CardComponent
+          details={details}
+          getProfileDetails={getProfileDetails}
+        />
+      );
     }
     if (active.profile) {
-      return <ProfileComponent  details={details} index={active.index} Goback={Goback} />;
+      return (
+        <ProfileComponent
+          details={details}
+          index={active.index}
+          Goback={Goback}
+        />
+      );
     }
-   
   };
 
   const getMaleuser = async () => {
@@ -101,19 +110,18 @@ const MainComponent = () => {
       maleUser: false,
       femaleUser: false,
       profile: true,
-      index:index
+      index: index,
     });
   };
-  
-  const Goback=()=>{
+
+  const Goback = () => {
     setActive({
       allUser: true,
       maleUser: false,
       femaleUser: false,
       profile: false,
-     
     });
-  }
+  };
 
   const handlechange = (e) => {
     setquery(e.target.value);
@@ -133,7 +141,6 @@ const MainComponent = () => {
           <RightComponent
             handleNext={handleNext}
             handleprevious={handleprevious}
-          
           >
             <GetActiveSreen getProfileDetails={getProfileDetails} />
           </RightComponent>

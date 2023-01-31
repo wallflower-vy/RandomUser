@@ -1,38 +1,41 @@
-.button-box{
-    /* background-color: green; */
-    /* margin-top: 4rem; */
-    /* padding: 1.5rem; */
+.button-box {
+  /* background-color: green; */
+  /* margin-top: 4rem; */
+  /* padding: 1.5rem; */
 }
-.users-btn{
-    /* width:3rem; */
-    /* align-items: center; */
-    padding:2rem 4rem;
-    
-    margin:1rem 2.5rem 1rem 0rem;
-    color:#fff;
-    font-size: 2.5rem;
-    border-radius: 2rem;
-    cursor: pointer;
+.users-btn {
+  /* width:3rem; */
+  /* align-items: center; */
+  padding: 2rem 4.5rem;
+
+  margin: 1rem 4rem 1rem 0rem;
+  color: #fff;
+  font-size: 2.5rem;
+  border-radius: 2rem;
+  cursor: pointer;
 }
-.text-box{
-    display: flex;
-    color:#fff;
-    justify-content: space-around;
+.text-box {
+  display: flex;
+  color: #fff;
+  justify-content: space-around;
 }
-.btn-text{
-    display: block;
+.btn-text {
+  display: block;
+}
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  .users-btn {
+    padding: 1.5rem 3rem;
+    margin: 1rem 3rem 1rem 0rem;
+
+    font-size: 2.3rem;
+  }
 }
 
-@media screen and (min-width:992px)and (max-width:1440px) {
-    .users-btn{
-        /* width:3rem; */
-        /* align-items: center; */
-        padding:2.4rem;
-        
-        margin:1rem 2.5rem 1rem 0rem;
-        color:#fff;
-        font-size: 2.5rem;
-        border-radius: 2rem;
-        cursor: pointer;
-    }
+@media only screen and (min-width: 993px) and (max-width: 1450px) {
+  .users-btn {
+    padding: 1.5rem 2.5rem;
+    margin: 1rem 2.5rem 1rem 0rem;
+
+    font-size: 2.3rem;
+  }
 }

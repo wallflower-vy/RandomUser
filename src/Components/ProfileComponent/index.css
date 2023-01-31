@@ -1,46 +1,65 @@
-.profile-box{
-    padding:1rem;
-    /* border: 1px solid green; */
-    display: flex;
-    /* background-color: red; */
-    margin-top: 2rem;
+.profile-box {
+  padding: 1rem;
 
+  display: flex;
+
+  margin-top: 2rem;
 }
-.image-boxx{
-    width:30%;
+.image-boxx {
+  width: 30%;
 }
-.userr-image{
-    border: 7px solid #3BD8D4;
+.userr-image {
+  border: 7px solid #3bd8d4;
+  border-radius: 50%;
+  width: 70%;
+}
+.email-box {
+  background-color: #d9d9e0;
+  padding: 0.4rem 1.6rem;
+
+  font-size: 20px;
+  border-radius: 25px;
+  margin-top: 1rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+.register-box {
+  background-color: lightpink;
+  padding: 0.8rem 1.6rem;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  color: black;
+}
+.register-box:hover {
+  background-color: #debdd3;
+}
+
+.back-arrow {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .profile-box {
+    padding: 1rem;
+
+    flex-direction: column;
+  }
+  .image-boxx {
+    width: 50%;
+  }
+  .userr-image {
+    border: 7px solid #3bd8d4;
     border-radius: 50%;
-    width:70%;
-}
-.email-box{
-    background-color: #D9D9E0;
-    padding: .4rem 1.6rem;
-    /* width:30rem; */
-    font-size: 20px;
-    border-radius: 25px;
-    margin-top: 1rem;
-    color: rgba(0,0,0,.8);
-   
-}
-.register-box{
-    /* margin-top: 1.5rem; */
-    background-color: lightpink;
-    padding: .8rem 1.6rem;
+    width: 100%;
+  }
+  .email-box {
     font-size: 16px;
-    border-radius: 25px;
-    cursor: pointer;
-    color:black; 
-  
-}
-.register-box:hover{
-    background-color: #DEBDD3;
-   
-}
-.call-box{
-    /* display: inline !important; */
-}
-.back-arrow{
-    cursor: pointer;
+  }
+  .register-box {
+    margin: 1.5rem 0rem;
+    width: 100%;
+    display: block;
+    padding: 0.5rem 1rem;
+    font-size: 14px;
+  }
 }

@@ -1,20 +1,11 @@
-.page-btn{
-    background-color: #D3D4DC;
-    border-radius: 5px;
-   
-    
+.page-btn {
+  background-color: #d3d4dc;
+  border-radius: 5px;
 }
-/* .page-btn2{
-    background-color: #22273D;
-    border-radius: 5px;
-} */
-        
-@media screen and (max-width:575px) {
-    .page-btn-box{
-        
-        margin-top: 1.5rem;
-        display: flex;
-      
-        
-    }
+
+@media screen and (max-width: 575px) {
+  .page-btn-box {
+    margin-top: 1.5rem;
+    display: flex;
+  }
 }

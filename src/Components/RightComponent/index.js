@@ -1,12 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./index.css";
 import Switch from "react-switch";
-import CardComponent from "../CardComponent";
-import axios from "axios";
+
 import DownloadButton from "../DownloadButton";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import PaginationComponent from "../../PaginationComponent";
-import ProfileComponent from "../ProfileComponent";
+
 
 const RightComponent = ({ children, handleNext,handleprevious }) => {
 
@@ -20,14 +19,14 @@ const RightComponent = ({ children, handleNext,handleprevious }) => {
         <form>
           <div className='form-box'>
             <input
-              class='appearance-none block form-input  bg-gray-200 text-gray-700 border border-gray-200   leading-tight focus:outline-none focus:bg-white focus:border-gray-500'
+              class='appearance-none block form-input   bg-gray-200 text-gray-700 border border-gray-200   leading-tight focus:outline-none focus:bg-white focus:border-gray-500'
               id='grid-city'
               type='text'
               placeholder='Albuquerque'
             />
             <div class='relative '>
               <select
-                class='block appearance-none form-input bg-gray-200 border border-gray-200 text-gray-700   rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500'
+                class='block appearance-none form-input  bg-gray-200 border border-gray-200 text-gray-700   rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500'
                 id='grid-state'
               >
                 <option>New Mexico</option>
@@ -59,8 +58,7 @@ const RightComponent = ({ children, handleNext,handleprevious }) => {
             color='#fff'
             icon={<IoIosArrowBack />}
             handlepage={handleprevious}
-            // handleClick={}
-            // handleBtnClick={fetchprevious}
+            
           />
           <PaginationComponent
             bg='#22273D'

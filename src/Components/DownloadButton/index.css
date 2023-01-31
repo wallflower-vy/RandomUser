@@ -1,22 +1,17 @@
-.download-btn{
-    background-color: #8B53C4;
+.download-btn {
+  background-color: #8b53c4;
+  border-radius: 40px;
+  text-align: center;
+}
+
+.pagination-box {
+  height: 5rem;
+}
+
+@media screen and (max-width: 57px) {
+  .download-btn {
+    background-color: #8b53c4;
     border-radius: 40px;
     text-align: center;
-    
-    
-}
-
-.pagination-box{
-    /* background-color: green; */
-    height: 5rem;
-}
-
-@media screen and (max-width:57px){
-    .download-btn{
-        background-color: #8B53C4;
-        border-radius: 40px;
-        text-align: center;
-        
-        
-    }
+  }
 }

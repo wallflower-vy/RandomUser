@@ -1,10 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./index.css";
 import { BiRightArrowAlt } from "react-icons/bi";
 import { AiOutlineMail } from "react-icons/ai";
 import { FiPhoneCall } from "react-icons/fi";
-import axios from "axios";
-// import ProfileComponent from "../ProfileComponent";
 
 const CardComponent = ({ details, getProfileDetails }) => {
   return (
@@ -37,7 +35,7 @@ const CardComponent = ({ details, getProfileDetails }) => {
                 </p>
               </div>
               <div className='lower-box'>
-                <p>
+                <p className="text">
                   <a href=''>
                     <AiOutlineMail className='icon' /> {item.email}
                   </a>
