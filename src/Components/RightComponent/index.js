@@ -5,7 +5,7 @@ import { DownloadExcel } from "react-excel-export";
 import Switch from "react-switch";
 // import DownloadButton from "../DownloadButton";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import PaginationComponent from "../../PaginationComponent";
+import PaginationComponent from "../PaginationComponent";
 import { BiCloudDownload } from "react-icons/bi";
 
 const RightComponent = ({
