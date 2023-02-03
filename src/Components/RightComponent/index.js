@@ -1,15 +1,47 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import "./index.css";
+import { DownloadExcel } from "react-excel-export";
 import Switch from "react-switch";
-
-import DownloadButton from "../DownloadButton";
+// import DownloadButton from "../DownloadButton";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import PaginationComponent from "../../PaginationComponent";
+import { BiCloudDownload } from "react-icons/bi";
+
+const RightComponent = ({
+  children,
+  handleNext,
+  handleprevious,
+
+  // switchHandler,
+  // checked,
+}) => {
+  const [users, setusers] = useState(false);
+  const sample = (
+    <div className="download-btn py-3 px-7 text-white text-xl font-bold">
+      <BiCloudDownload  className="icon"/>Download Result
+    </div>
+  );
+
+  const [page, setpage] = useState(1);
+  const downloadUsers = async () => {
+    const { data } = await axios.get(
+      `https://randomuser.me/api/?page=${page}&results=3&seed=abc`
+    );
+    const users = data.results;
+    setusers(users);
+  };
+  useEffect(() => {
+    downloadUsers();
+  }, [page]);
+
+  
 
 
-const RightComponent = ({ children, handleNext,handleprevious }) => {
 
- 
+
+  
+
   return (
     <div className='right-component'>
       <div className='mt-12 '>
@@ -43,14 +75,31 @@ const RightComponent = ({ children, handleNext,handleprevious }) => {
                 </svg>
               </div>
             </div>
-            <Switch /> Show Country
+          
+            <Switch
+              height={35}
+              width={70}
+              
+              uncheckedIcon={false}
+              checkedIcon={false}
+              onColor={"#00BEB8"}
+              
+            />
+            <span className='text-2xl '>Switch Country</span>
           </div>
         </form>
       </div>
-   
-    {children}
+
+      {children}
       <div className=' botton-main-box'>
-        <DownloadButton />
+        <DownloadExcel
+          data={users}
+          buttonLabel={sample}
+          fileName='sample-file'
+          
+          
+        />
+        {/* <DownloadButton /> */}
 
         <div className='flex'>
           <PaginationComponent
@@ -58,14 +107,12 @@ const RightComponent = ({ children, handleNext,handleprevious }) => {
             color='#fff'
             icon={<IoIosArrowBack />}
             handlepage={handleprevious}
-            
           />
           <PaginationComponent
             bg='#22273D'
             color=''
             icon={<IoIosArrowForward />}
             handlepage={handleNext}
-          
           />
         </div>
       </div>

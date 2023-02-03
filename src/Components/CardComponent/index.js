@@ -1,15 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import "./index.css";
 import { BiRightArrowAlt } from "react-icons/bi";
 import { AiOutlineMail } from "react-icons/ai";
 import { FiPhoneCall } from "react-icons/fi";
 
-const CardComponent = ({ details, getProfileDetails }) => {
+const CardComponent = ({ details, getProfileDetails, showCoutry }) => {
+  const[showCountry, setshowCountry] = useState(true);
+
   return (
     <div className='main-cardComponent'>
       {details ? (
         details.map((item, index) => (
-          <div className='card-box'>
+          <div className='card-box data-testid=’result’'>
             <div className='image-box'>
               <img
                 className='user-image'

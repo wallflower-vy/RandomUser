@@ -1,5 +1,6 @@
 
 import './App.css';
+
 import MainComponent from './Components/MainComponent';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
 
   return (
     <div className="App">
+    
      <MainComponent  />
     </div>
   );

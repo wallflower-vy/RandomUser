@@ -10,6 +10,7 @@ const MainComponent = () => {
   const [page, setpage] = useState(1);
   const [query, setquery] = useState("");
   const [details, setDetails] = useState(false);
+  const [country, setCountry] =useState({checked:false})
 
   const [active, setActive] = useState({
     allUser: true,
@@ -18,6 +19,7 @@ const MainComponent = () => {
     profile: false,
   });
 
+ 
   const handleNext = () => {
     setpage(page + 1);
   };
@@ -141,6 +143,7 @@ const MainComponent = () => {
           <RightComponent
             handleNext={handleNext}
             handleprevious={handleprevious}
+          
           >
             <GetActiveSreen getProfileDetails={getProfileDetails} />
           </RightComponent>

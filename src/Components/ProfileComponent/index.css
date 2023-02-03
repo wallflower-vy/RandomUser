@@ -1,6 +1,6 @@
 .profile-box {
   padding: 1rem;
-
+    overflow-x: hidden;
   display: flex;
 
   margin-top: 2rem;
